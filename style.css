@@ -1,0 +1,149 @@
+:root{
+    --background-color: #fff;
+    --button-background-color: #fff;
+}
+.dark{
+    --background-color: #22212C;
+    --button-background-color: #22212C;
+}
+
+body{
+    margin:20px;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+
+    background-color: var(--background-color);
+
+}
+
+#s0 button {
+    width:100px;
+    height: 20px;
+    background-color:var(--button-background-color);
+    border: 1px solid #BB99DD;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #BB99DD;
+    padding: 0;
+}
+
+
+img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border:1px solid #BB99DD;
+    padding: 5px;
+}
+
+.s1{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-links{
+    width:326px;
+    height: 49px;
+    background-color: var(--button-background-color);
+    border: 1px solid #BB99DD;
+    border-radius: 5px;
+
+}
+
+.btn-links a{
+    color:#BB99DD;
+    text-decoration: none;
+}
+
+.btn-links:hover{
+    background-color:rgb(236, 229, 229);
+    transition: 1.0s;
+    transform: scale(1.1);
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav img{
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+nav img:hover{
+    background-color:rgb(236, 229, 229);
+    transition: 1.0s;
+    transform: scale(1.1);
+}
+
+nav{
+    padding-top: 10px;
+}
+
+p{
+    font-family:'Poppins', sem serifa;
+    color: #BB99DD;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.label{
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    width: 40px;
+    padding: 5px;
+
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+
+    width: 22px;
+    height: 22px;
+
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+.fa-sun {
+    color: #f1c40f;
+}
+
+.fa-moon{
+    color: #f39c12 ;
+}
+
